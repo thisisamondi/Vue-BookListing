@@ -1,10 +1,5 @@
 <template>
-  <div>
-      <ul>
-          <li>{{book.title}}:{{book.author}}</li>
-          
-      </ul>
-  </div>
+    <li>{{book.title}}:{{book.author}}</li>
 </template>
 
 <script>
@@ -15,5 +10,8 @@ export default {
 </script>
 
 <style scoped>
-
+li {
+    display: block;
+    margin: 0 10px;
+}
 </style>
