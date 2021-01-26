@@ -4,7 +4,7 @@
     <ul>
        <BookItem v-for="book in books" :book='book'></BookItem>
     </ul>
-    <BookForm @addBook='appendBook'></BookForm>
+    <book-form @addBook='appendBook'></book-form>
       
     </div>
 </template>
@@ -12,9 +12,11 @@
 <script>
 import BookItem from './BookItem';
 import BookForm from './BookForm';
+import BookForm from './BookForm.vue';
 export default {
     components: {
-    BookItem, BookForm,
+    BookItem, BookForm
+        BookForm,
   },
 data () {
     return {
