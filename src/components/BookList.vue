@@ -1,18 +1,20 @@
 <template>
   <div>
-      <h1>{{title}}</h1>
-      <ul>
-       <book-item v-for="book in books" :book='book'></book-item>
+    <h1>{{title}}</h1>
+    <ul>
+       <BookItem v-for="book in books" :book='book'></BookItem>
     </ul>
+    <BookForm @addBook='appendBook'></BookForm>
       
     </div>
 </template>
 
 <script>
 import BookItem from './BookItem';
+import BookForm from './BookForm';
 export default {
     components: {
-    BookItem,
+    BookItem, BookForm,
   },
 data () {
     return {
