@@ -12,12 +12,10 @@
 <script>
 import BookItem from './BookItem';
 import BookForm from './BookForm';
-import BookForm from './BookForm.vue';
 
 export default {
     components: {
-    BookItem, BookForm
-        BookForm,
+    BookItem, BookForm,
   },
     methods: {
         appendBook(bookTitle, bookAuthor){
